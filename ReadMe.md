@@ -13,4 +13,4 @@ line-breaks: 0
 sentences are closed by a full-stop (except for the last sentence, because of how the text will be used)
 
 A copy of the original .txt file will be archived into a git repostitory before working on it as a .js file. The text file can be restored if ever needed. 
-
+A new branch was made to investigate using css columns with divs inside that will flow as blocks of arbitray heights. It works well. To use, will need to checkout the columns .html file as it does not appear in master until it is merged

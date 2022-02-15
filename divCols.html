@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+How Flowing Cards Might Work
+    </title>
+
+<!--    <link rel="stylesheet" href="style.css">  -->
+  </head>
+<style>
+.cols {
+  columns: 19em;
+}
+p {
+  margin-top: 0px;
+}
+
+.card {
+  display: relative;
+  border: 1px solid black;
+}
+
+.inner-card {
+  /*display: absolute;*/
+  top: 0px;
+  left: 0px;
+  min-height: 200px;
+  max-height: 400px;
+  overflow: scroll;
+  width: 100%;
+}
+</style>
+<script src="randomText.js"></script>
+
+<body>
+<h1>How Flowing Cards Might Work</h1>
+
+<div id="output" class="cols"></div>
+
+<script defer>
+let markup = "";
+
+for (let i=0; i<21; i++) {
+markup += '<div class="card"><div class="inner-card">';
+  for (let j=0; j<2; j++) {
+markup += `<p>${junkText(2 + parseInt(Math.random()*5))}</p>`;
+} // next j;
+markup += "</div></div></p><p>";
+} // next i;
+
+
+document.getElementById('output').innerHTML = markup;
+</script>
+
+
+</body>
+</html>
+

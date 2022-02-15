@@ -11,17 +11,29 @@ Random Text Generator
 
 <!--    <link rel="stylesheet" href="style.css">  -->
   </head>
+<style>
+.cols {
+  columns: auto 22em;
+}
+p {
+  margin-top: 0px;
+}
+</style>
 <script src="randomText.js"></script>
 
 <body>
 <h1>Random Text Generator</h1>
 
-<div id="output"></div>
+<div id="output" class="cols"></div>
 
 <script defer>
 let markup = "";
-markup += text.split(".").length + "<br>";
-markup += "hello world<br>";
+
+for (let i=0; i<4; i++) {
+markup += `<p>${junkText(9 + parseInt(Math.random()*4))}</p>`;
+}
+
+
 document.getElementById('output').innerHTML = markup;
 </script>
 

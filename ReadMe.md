@@ -8,6 +8,7 @@ Earlier, A text file containing dummy text was written:
 File name: randomText.txt
 number of words: 2014
 characters: 13167
+sentences: 175
 line-breaks: 0
 sentences are closed by a full-stop (except for the last sentence, because of how the text will be used)
 

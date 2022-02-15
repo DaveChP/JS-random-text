@@ -13,7 +13,7 @@ Random Text Generator
   </head>
 <style>
 .cols {
-  columns: auto 22em;
+  columns: 4 auto;
 }
 p {
   margin-top: 0px;
@@ -29,8 +29,8 @@ p {
 <script defer>
 let markup = "";
 
-for (let i=0; i<4; i++) {
-markup += `<p>${junkText(9 + parseInt(Math.random()*4))}</p>`;
+for (let i=0; i<12; i++) {
+markup += `<p>${junkText(4 + parseInt(Math.random()*4))}</p>`;
 }
 
 
